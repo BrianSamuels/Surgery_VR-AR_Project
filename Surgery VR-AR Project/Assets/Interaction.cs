@@ -43,7 +43,7 @@ public class Interaction : MonoBehaviour
             {
                 Debug.Log("Holding Touch");
                 //Updating camera position
-                transform.position += new Vector3(touchStart.x * 10 * Time.deltaTime, 0, touchStart.y * 10 * Time.deltaTime);
+                transform.position += new Vector3(touchStart.y * ySpeed * Time.deltaTime, 0, touchStart.x * xSpeed * Time.deltaTime);
             }
         }
 
@@ -72,7 +72,7 @@ public class Interaction : MonoBehaviour
 
             float difference = prevMag - currentMag;
 
-            Zoom(difference * 0.01f);
+            Zoom(difference * 0.05f);
         }
 
         // rotation
