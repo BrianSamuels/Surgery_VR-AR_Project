@@ -557,17 +557,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: OVRCameraRig
       objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 238
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -86
+      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.82
+      value: 739
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -562
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -599,11 +611,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2037080, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
       propertyPath: field of view
-      value: 97
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037080, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
+      propertyPath: m_FOVAxisMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2037080, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
       propertyPath: far clip plane
       value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037080, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4b650a383c3760f449b65ff48bccdd5f, type: 3}
       propertyPath: _trackingOriginType
