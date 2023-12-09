@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BodyContact : MonoBehaviour
 {
-
+    public List<AudioSource> heartbeats = new List<AudioSource>();
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +18,15 @@ public class BodyContact : MonoBehaviour
         
     }
     
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.CompareTag("scapel"))
         {
-            Debug.Log("scapel destroyed");
-            Destroy(collision.gameObject);
+            Debug.Log("music playing");
+            //heartbeats[0].loop = true;
+            heartbeats[0].Play();
+            //Debug.Log("scapel destroyed");
+            //Destroy(collision.gameObject);
         }
     }
 }
