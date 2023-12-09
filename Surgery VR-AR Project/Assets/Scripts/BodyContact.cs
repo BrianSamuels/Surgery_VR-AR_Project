@@ -5,26 +5,45 @@ using UnityEngine;
 public class BodyContact : MonoBehaviour
 {
     public List<AudioSource> heartbeats = new List<AudioSource>();
-    
-    // Start is called before the first frame update
-    void Start()
+    public int bpm = 0;
+    private void Start()
     {
-        
+        bpm = 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void Update()
+    {   /*
+        if (heartbeats[0].isPlaying)
+        {
+            bpm += 1;
+        }
+        */
     }
-    
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("scapel"))
+        if (collision.gameObject.CompareTag("Stethoscope"))
         {
             Debug.Log("music playing");
-            //heartbeats[0].loop = true;
+            heartbeats[0].loop = true;
             heartbeats[0].Play();
+            //Debug.Log("scapel destroyed");
+            //Destroy(collision.gameObject);
+        }
+        /*
+        while (heartbeats[0].isPlaying)
+        {
+            bpm += 1;
+        
+        */
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Stethoscope"))
+        {
+            Debug.Log("music stopped");
+            heartbeats[0].loop = false;
+            heartbeats[0].Stop();
+            print(bpm);
             //Debug.Log("scapel destroyed");
             //Destroy(collision.gameObject);
         }
