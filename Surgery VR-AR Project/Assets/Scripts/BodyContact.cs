@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BodyContact : MonoBehaviour
 {
-    //public List<AudioSource> heartbeats = new List<AudioSource>();
-    public AudioSource heartbeat;
+    public List<AudioSource> heartbeats = new List<AudioSource>();
+    //public AudioSource heartbeat;
     public GameObject timer;
     public int bpm = 0;
     private void Start()
@@ -27,10 +27,10 @@ public class BodyContact : MonoBehaviour
         {
             timer.GetComponent<Timer>().StartTimer();
             Debug.Log("music playing");
-            //heartbeats[0].loop = true;
-            //heartbeats[0].Play();
-            heartbeat.loop = true;
-            heartbeat.Play();
+            heartbeats[0].loop = true;
+            heartbeats[0].Play();
+            //heartbeat.loop = true;
+            //heartbeat.Play();
             //Debug.Log("scapel destroyed");
             //Destroy(collision.gameObject);
         }
@@ -47,10 +47,10 @@ public class BodyContact : MonoBehaviour
         {
             timer.GetComponent<Timer>().StopTimer();
             Debug.Log("music stopped");
-            //heartbeats[0].loop = false;
-            //heartbeats[0].Stop();
-            heartbeat.loop = false;
-            heartbeat.Stop();
+            heartbeats[0].loop = false;
+            heartbeats[0].Stop();
+            //heartbeat.loop = false;
+            //heartbeat.Stop();
             //print(bpm);
             //Debug.Log("scapel destroyed");
             //Destroy(collision.gameObject);

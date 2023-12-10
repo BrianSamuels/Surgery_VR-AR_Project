@@ -6,6 +6,7 @@ TagManager:
   tags:
   - scapel
   - Stethoscope
+  - Contact
   layers:
   - Default
   - TransparentFX
