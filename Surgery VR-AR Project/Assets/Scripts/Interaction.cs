@@ -15,10 +15,10 @@ public class Interaction : MonoBehaviour
     public float zoomOutMin = 2;
     public float zoomoutMax = 43.5369f;
     public Vector3 delta = Vector3.zero;
-    private Vector3 lastPos = Vector3.zero;
-    float x = 0.0f;
-    float y = 0.0f;
-    GameObject[] array;
+    //private Vector3 lastPos = Vector3.zero;
+    //float x = 0.0f;
+    //float y = 0.0f;
+    //GameObject[] array;
     private void Awake()
     {
         Input.multiTouchEnabled = true;
